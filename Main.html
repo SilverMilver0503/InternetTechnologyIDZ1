@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <script src="socket.io/socket.io.js"></script>
+
+    <canvas width="1400" height="1400" style="cursor: auto;" id="rootCanvas"></canvas>
+    <div id = "options" style="background-color: rgba(21, 33, 77, 0.455); display: inline-block; border-radius: 10px; position: fixed; top: 10px; left: 10px;">
+        <p>Колір</p>
+        <input type="color" id="color">
+        <p>Радіус</p>
+        <input type="range" id="radiusRange" min="1" max="1400" value="10">
+        <input type="number" id="radiusNumber" min="0" max="100" value="50">
+    
+    </div>
+    <script src="drawing.js"></script>
+</body>
+</html>
